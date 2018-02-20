@@ -139,7 +139,10 @@ const view = (function() {
     const cont = qs("#resultsList");
     let related = ``;
     titles.forEach(title => {
-      related += `<h1 class="related title" style="margin-top: 0.75rem;">${title.title.replace(/_/g, " ")}</h1>`;
+      related += `<h1 class="related title" style="margin-top: 0.75rem; cursor: pointer;">${title.title.replace(
+        /_/g,
+        " "
+      )}</h1>`;
     });
     cont.insertAdjacentHTML("beforeend", related);
   };
