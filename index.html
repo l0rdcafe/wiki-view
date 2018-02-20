@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Bulma!</title>
+  <title>WikiView</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
 </head>
@@ -12,14 +12,20 @@
 <body>
   <section class="section">
     <div class="container">
-      <h1 class="title">
-        Hello World
+      <h1 class="title has-text-centered" style="margin-bottom: 2.25rem;">
+        WikiView
       </h1>
       <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
+        <button class="button" id="randomArticle" style="display: block; margin: auto;">Fetch random article</button>
       </p>
+      <p class="subtitle columns is-multiline">
+        <input class="input column is-3 is-offset-4" id="searchArticle" style="padding: 0; padding-left: 0.75rem; border-bottom-right-radius: 0; border-top-right-radius: 0;"><button style="border-bottom-left-radius: 0; border-top-left-radius: 0;" id="searchBtn" class="button">Search Term</button>
+      </p>
+      <ul id="resultsList">
+      </ul>
     </div>
   </section>
+  <script src="main.js"></script>
 </body>
 
 </html>
